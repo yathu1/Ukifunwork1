@@ -16,6 +16,19 @@ $(document).ready(function() {
                  sound.stop();
                });
 });
+ SC.stream('/tracks/343049933',function(sound){
+
+       $("#start1").click(function(e) {
+              e.preventDefault();
+              sound.start();
+             });
+
+
+              $("#stop1").click(function(e) {
+                 e.preventDefault();
+                 sound.stop();
+               });
+});
 
 
 });
